@@ -1,7 +1,7 @@
 {
   "name": "cortex-plugin-gis-mapping",
-  "version": "1.0.0",
-  "description": "OpenStreetMap & GIS Agent — Geocoding, isochrones, spatial joins, heat maps, geographic pattern analysis",
+  "version": "1.0.1",
+  "description": "OpenStreetMap & GIS Agent \u2014 Geocoding, isochrones, spatial joins, heat maps, geographic pattern analysis",
   "kind": "esm",
   "entryPoint": "mod.ts",
   "runtime": "deno",
@@ -9,14 +9,40 @@
   "license": "MIT",
   "repository": "https://github.com/CortexPrism/cortex-plugin-gis-mapping",
   "homepage": "https://cortexprism.io/marketplace/plugins/gis-mapping",
-  "capabilities": ["tools", "network:fetch"],
+  "capabilities": [
+    "tools",
+    "network:fetch"
+  ],
   "tools": [
-    { "name": "gis_geocode", "description": "Geocode address to coordinates", "params": [] },
-    { "name": "gis_isochrone", "description": "Calculate travel time areas", "params": [] },
-    { "name": "gis_spatial_join", "description": "Perform spatial join analysis", "params": [] },
-    { "name": "gis_heatmap", "description": "Generate geographic heat map", "params": [] }
+    {
+      "name": "gis_geocode",
+      "description": "Geocode address to coordinates",
+      "params": []
+    },
+    {
+      "name": "gis_isochrone",
+      "description": "Calculate travel time areas",
+      "params": []
+    },
+    {
+      "name": "gis_spatial_join",
+      "description": "Perform spatial join analysis",
+      "params": []
+    },
+    {
+      "name": "gis_heatmap",
+      "description": "Generate geographic heat map",
+      "params": []
+    }
   ],
   "dependencies": {},
-  "peerDependencies": { "cortex": ">=1.0.0" },
-  "aiDisclosure": { "tools": ["Kilo (DeepSeek) — batch scaffold"], "humanReview": true }
+  "peerDependencies": {
+    "cortex": ">=0.51.0"
+  },
+  "aiDisclosure": {
+    "tools": [
+      "Kilo (DeepSeek) \u2014 batch scaffold"
+    ],
+    "humanReview": true
+  }
 }
